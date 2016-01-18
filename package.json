@@ -1,22 +1,22 @@
 {
-  "name": "angular-mass-autocomplete",
+  "name": "angular-mass-autocomplete-bem",
   "version": "0.2.3",
-  "description": "Autocomplete for Angular.js applications with a lot to complete",
+  "description": "Autocomplete for Angular.js ported to use BEM CSS methodology",
   "main": "massautocomplete.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hakib/MassAutocomplete"
+    "url": "https://github.com/handonam/MassAutocomplete"
   },
   "keywords": [
     "angularjs",
     "autocomplete",
     "dropdown"
   ],
-  "author": "Haki Benita",
-  "homepage": "http://hakib.github.io/MassAutocomplete",
+  "author": "Hanam Do",
+  "homepage": "http://github.com/handonam",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hakib/MassAutocomplete/issues"
+    "url": "https://github.com/handonam/MassAutocomplete/issues"
   },
   "devDependencies": {
     "gulp": "~3.8.10",
