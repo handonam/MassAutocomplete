@@ -11,8 +11,8 @@ angular.module('MassAutoComplete', [])
       '<div class="MassAutocomplete__Container" ng-show="show_autocomplete && results.length > 0" style="position:absolute;">' +
         '<ul class="MassAutocomplete__Menu">' +
           '<li class="MassAutocomplete__Item" ' +
-            'ng-class="$index == selected_index ? \'MassAutocomplete__Container--Focus\': \'\'">' +
-            'ng-repeat="result in results" ng-if="$index > 0" ' +
+            'ng-class="$index == selected_index ? \'MassAutocomplete__Container--Focus\': \'\'" ' +
+            'ng-repeat="result in results" ng-if="$index > 0">' +
             '<a class="MassAutocomplete__Link" href ng-click="apply_selection($index)" ng-bind-html="result.label"></a>' +
           '</li>' +
         '</ul>' +
