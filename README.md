@@ -1,6 +1,4 @@
-MassAutocomplete
+MassAutocomplete w/ BEM support
 ================
 
-Autocomplete for Angular.js applications with a lot to complete.
-
-[http://hakib.github.io/MassAutocomplete](http://hakib.github.io/MassAutocomplete)
+Adapted from [http://hakib.github.io/MassAutocomplete](http://hakib.github.io/MassAutocomplete)

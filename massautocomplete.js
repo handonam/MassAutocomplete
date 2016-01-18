@@ -8,16 +8,17 @@ angular.module('MassAutoComplete', [])
     transclude: true,
     template:
       '<span ng-transclude></span>' +
-      '<div class="ac-container" ng-show="show_autocomplete && results.length > 0" style="position:absolute;">' +
-        '<ul class="ac-menu">' +
-          '<li ng-repeat="result in results" ng-if="$index > 0" ' +
-            'class="ac-menu-item" ng-class="$index == selected_index ? \'ac-state-focus\': \'\'">' +
-            '<a href ng-click="apply_selection($index)" ng-bind-html="result.label"></a>' +
+      '<div class="MassAutocomplete__Container" ng-show="show_autocomplete && results.length > 0" style="position:absolute;">' +
+        '<ul class="MassAutocomplete__Menu">' +
+          '<li class="MassAutocomplete__Item" ' +
+            'ng-class="$index == selected_index ? \'MassAutocomplete__Container--Focus\': \'\'">' +
+            'ng-repeat="result in results" ng-if="$index > 0" ' +
+            '<a class="MassAutocomplete__Link" href ng-click="apply_selection($index)" ng-bind-html="result.label"></a>' +
           '</li>' +
         '</ul>' +
       '</div>',
     link: function (scope, element) {
-      scope.container = angular.element(element[0].getElementsByClassName('ac-container')[0]);
+      scope.container = angular.element(element[0].getElementsByClassName('MassAutocomplete__Container')[0]);
     },
     controller: ["$scope", function ($scope) {
       var that = this;
