@@ -75,14 +75,15 @@ angular.module('MassAutoComplete', [])
           };
       }
 
+      // absolute position the autocomplete in the container that holds the input.
       function _position_autocomplete() {
         var rect = current_element[0].getBoundingClientRect(),
-            scrollTop = $document[0].body.scrollTop || $document[0].documentElement.scrollTop || $window.pageYOffset,
-            scrollLeft = $document[0].body.scrollLeft || $document[0].documentElement.scrollLeft || $window.pageXOffset,
             container = $scope.container[0];
 
-        container.style.top = rect.top + rect.height + scrollTop + 'px';
-        container.style.left = rect.left + scrollLeft + 'px';
+        // Get styles from IE or everything else
+        var style = current_element[0].currentStyle || window.getComputedStyle(current_element[0]);
+        container.style.top = rect.height + 'px';
+        container.style.left = style.marginLeft;
         container.style.width = rect.width + 'px';
       }
       var position_autocomplete = debounce(_position_autocomplete, user_options.debounce_position);
