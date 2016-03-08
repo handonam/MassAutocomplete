@@ -5,7 +5,7 @@
   "main": "massautocomplete.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/handonam/MassAutocomplete"
+    "url": "https://github.com/handonam/MassAutocompleteBEM"
   },
   "keywords": [
     "angularjs",
@@ -16,7 +16,7 @@
   "homepage": "http://github.com/handonam",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/handonam/MassAutocomplete/issues"
+    "url": "https://github.com/handonam/MassAutocompleteBEM/issues"
   },
   "devDependencies": {
     "gulp": "~3.8.10",
