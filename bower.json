@@ -1,5 +1,5 @@
 {
-  "name": "angular-mass-autocomplete",
+  "name": "angular-mass-autocomplete-bem",
   "version": "0.2.4",
   "main": "massautocomplete.min.js",
   "dependencies": {
